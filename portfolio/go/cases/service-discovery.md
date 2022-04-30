@@ -1,11 +1,11 @@
-今天聊一下gRPC的服务发现和负载均衡原理相关的话题，不同于`Nginx`、`Lvs`或者`F5`这些服务端的负载均衡策略，gRPC采用的是客户端实现的负载均衡。什么意思呢，对于使用服务端负载均衡的系统，客户端会首先访问负载均衡的域名/IP，再由负载均衡按照策略分发请求到后端具体某个服务节点上。而对于客户端的负载均衡则是，客户端从可用的后端服务节点列表中根据自己的负载均衡策略选择一个节点直连后端服务器。
+## gRPC的服务发现和负载均衡
+gRPC的负载均衡不同于`Nginx`、`Lvs`或者`F5`这些服务端的负载均衡策略，gRPC采用的是客户端实现的负载均衡。什么意思呢，对于使用服务端负载均衡的系统，客户端会首先访问负载均衡的域名/IP，再由负载均衡按照策略分发请求到后端具体某个服务节点上。而对于客户端的负载均衡则是，客户端从可用的后端服务节点列表中根据自己的负载均衡策略选择一个节点直连后端服务器。
 
 
 `Etcd`软件包的`naming`组件里提供了一个命名解析器（naming resolver）结合`gRPC`本身自带的`RoundRobin` 轮询调度负载均衡器，让使用者能方便地搭建起一套服务注册/发现和负载均衡体系。如果轮询调度满足不了调度需求或者不想使用`Etcd`作为服务的注册中心和命名解析器的话，可以通过写代码实现`gRPC`定义的`Resolver`和`Balancer`接口来满足系统的自定义需求。
 
 >本文引用的源码对应的版本为：gRPC v1.2.x、  Etcd  v3.3
 >
->如果你对gRPC和Etcd还不了解，可以先看看我很早之前写的[gRPC入门](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1358237826197962753&__biz=MzUzNTY5MzU2MA==#wechat_redirect)和[Etcd入门](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1574539663539781634&__biz=MzUzNTY5MzU2MA==#wechat_redirect) 系列的文章。
 
 ## gRPC服务注册发现
 
