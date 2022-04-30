@@ -26,7 +26,13 @@ Here are some ideas to get you started:
 <code><img height="60" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"></code>
 <code><img height="60" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
 
-### Portfolio
+### [Portfolio](https://github.com/kevinyan815/kevinyan815/tree/master/portfolio)
+- 🔭 This is the portfolio of my carrier's working experience.
+- 📫I'm open for job interview, if you feel my expertise and experience is suitable for your recruting positon, 
+please feel free to contact me with the email: keivnyan815@gmail.
+- 💬 Cause in daily life & work I mainly use Chinese, so this portfolio will be presented in Chinese language, but actually you can communicate with me in English.
+
+#### Portfolio catalog
 - [分布式 Go 服务架构和治理方案](https://github.com/kevinyan815/kevinyan815/tree/master/portfolio/go)
 
 
