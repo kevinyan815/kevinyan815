@@ -2,4 +2,4 @@
 期间也帮其他团队趟了不少坑，好在也获得了不少经验。
 
 ## K8s 实战记录
-- K8s 基础入门和实践
+- [K8s 基础入门和实践](https://github.com/kevinyan815/kevinyan815/blob/master/portfolio/k8s/K8s%20基础入门和实践.pdf)
