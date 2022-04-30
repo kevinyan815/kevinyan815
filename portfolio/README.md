@@ -13,3 +13,6 @@ please feel free to contact me with the email: keivnyan815@gmail.
 - Java 并发编程
 - 业务需求分析 -- UML 应用作品集
 - 研发和交付管理
+
+
+**本作品集中所有内容，拒绝公众号等一切平台的转载，请理解**
