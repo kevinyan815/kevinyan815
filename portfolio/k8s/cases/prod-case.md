@@ -109,12 +109,9 @@ case <-stopChan:
 
 
 
-参考资料：
+下面是做这次方案时，调研和学习到的K8s知识：
+  - [在K8s上高可用要解决的问题](https://github.com/kevinyan815/kevinyan815/blob/master/portfolio/k8s/cases/ha-challenges.md)
+  - [Pod的生命周期钩子](https://github.com/kevinyan815/kevinyan815/blob/master/portfolio/k8s/cases/pod-pre-stop.md)
+  - [实现应用副本更新时的自动摘流](https://github.com/kevinyan815/kevinyan815/blob/master/portfolio/k8s/cases/auto-service-block.md)
+  - [使用PDB避免Kubernetes集群中断](https://github.com/kevinyan815/kevinyan815/blob/master/portfolio/k8s/cases/pdb.md)
 
-
-
-https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-best-practices-terminating-with-grace
-
-https://blog.gruntwork.io/delaying-shutdown-to-wait-for-pod-deletion-propagation-445f779a8304
-
-https://stackoverflow.com/questions/55797865/behavior-of-server-gracefulstop-in-golang
