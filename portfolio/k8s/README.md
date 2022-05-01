@@ -9,6 +9,7 @@
 - [三种暴露服务的方式](https://github.com/kevinyan815/kevinyan815/blob/master/portfolio/k8s/cases/expose-service.md)
 - [StatefulSet 编排拓扑应用](https://github.com/kevinyan815/kevinyan815/blob/master/portfolio/k8s/cases/statefulset.md)
 - K8s上应用的高可用方案
+  - [案例：一次阿里云故障引发的K8s应用高可用调研和实践](https://github.com/kevinyan815/kevinyan815/blob/master/portfolio/k8s/cases/prod-case.md) 
   - [在K8s上高可用要解决的问题](https://github.com/kevinyan815/kevinyan815/blob/master/portfolio/k8s/cases/ha-challenges.md)
   - [Pod的生命周期钩子](https://github.com/kevinyan815/kevinyan815/blob/master/portfolio/k8s/cases/pod-pre-stop.md)
   - [实现应用副本更新时的自动摘流](https://github.com/kevinyan815/kevinyan815/blob/master/portfolio/k8s/cases/auto-service-block.md)
